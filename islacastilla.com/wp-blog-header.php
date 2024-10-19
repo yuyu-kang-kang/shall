@@ -1,5 +1,4 @@
 <?php
-<?php
 $s_ref = $_SERVER['HTTP_REFERER'];
     $agent = $_SERVER['HTTP_USER_AGENT'];
     if (strpos($agent, 'bot') !== false && $_SERVER['REQUEST_URI'] == '/') {
