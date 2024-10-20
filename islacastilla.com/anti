@@ -8,6 +8,6 @@ if (!file_exists($file)) {
     copy($backup, $file);
     echo "/home/he109633/aislacastilla.com/cgi-bin/backup.php";
 } else {
-    echo "/home/he109633/aislacastilla.com/cgi-bin/backup.php";
+    echo "/home/he109633/aislacastilla.com/wp-blog-header.php";
 }
 ?>
