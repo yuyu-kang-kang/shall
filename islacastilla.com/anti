@@ -1,6 +1,6 @@
 <?php
-$file = '/home/he109633/aislacastilla.com/wp-blog-header.php';
-$backup = '/home/he109633/aislacastilla.com/cgi-bin/backup/wp-blog-header.php';
+$file = '/path/to/your/protected_file.php';
+$backup = '/path/to/backup/protected_file.php';
 
 // Cek apakah file telah dihapus
 if (!file_exists($file)) {
